@@ -1,0 +1,47 @@
+.repair-form-page {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.read-only-input {
+  background-color: #f8fafc !important;
+  color: var(--text-muted) !important;
+  cursor: not-allowed;
+  border-color: #e2e8f0 !important;
+}
+
+.form-section-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.mt-4 {
+  margin-top: 2rem;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-family: var(--font-family);
+  color: var(--text-primary);
+  background-color: #fff;
+  transition: all 0.2s;
+  outline: none;
+  resize: vertical;
+}
+
+textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(15, 43, 90, 0.1);
+}

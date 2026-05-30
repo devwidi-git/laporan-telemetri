@@ -1,0 +1,147 @@
+.maintenance-form-page {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header-grid {
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.time-inputs {
+  display: flex;
+  gap: 1rem;
+}
+
+.time-inputs div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.time-label {
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.checklist-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border: 1px solid var(--border-color);
+}
+
+.checklist-col:first-child {
+  border-right: 1px solid var(--border-color);
+}
+
+.check-box-group {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.check-box-group:last-child {
+  border-bottom: none;
+}
+
+.check-box-group h4 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+}
+
+.checkbox-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding-left: 1rem;
+}
+
+.checkbox-item input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.tegangan-input {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+.tegangan-input input {
+  width: 80px;
+  padding: 0.25rem 0.5rem;
+  border: 1px dashed var(--border-color);
+  border-radius: 4px;
+  text-align: center;
+}
+
+.calib-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calib-header input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+
+.calib-subtitle {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+.calib-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+}
+
+.calib-table th, .calib-table td {
+  border: 1px solid var(--border-color);
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.calib-table th {
+  background-color: #f8fafc;
+  font-weight: 600;
+}
+
+.calib-table input {
+  width: 100%;
+  border: none;
+  background: transparent;
+  text-align: center;
+  outline: none;
+  padding: 0.25rem;
+}
+
+.calib-table input:focus {
+  background-color: rgba(15, 43, 90, 0.05);
+}
+
+@media (max-width: 768px) {
+  .checklist-container {
+    grid-template-columns: 1fr;
+  }
+  .checklist-col:first-child {
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+  }
+}

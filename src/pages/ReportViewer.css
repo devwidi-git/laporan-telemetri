@@ -1,0 +1,295 @@
+.report-viewer-page {
+  padding: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.report-document {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 8px;
+  max-width: 900px;
+  margin: 1.5rem auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.form-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.form-header h2 {
+  margin: 0;
+  color: var(--text-primary);
+}
+
+.status-banner {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.banner-success {
+  background-color: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  color: #166534;
+}
+
+.banner-danger {
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #991b1b;
+}
+
+.banner-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-content h3 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.125rem;
+}
+
+.banner-content p {
+  margin: 0;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.verifier-panel {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.verifier-panel h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.125rem;
+  color: var(--text-primary);
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  resize: vertical;
+}
+
+.verifier-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+/* DOCUMENT STYLES (Print Layout) */
+.document-body {
+  font-family: "Times New Roman", Times, serif;
+  color: #000;
+  line-height: 1.5;
+}
+
+.doc-meta-right {
+  text-align: right;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+/* Kop Surat Styles */
+.doc-kop {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.kop-title {
+  font-size: 12pt;
+  font-weight: bold;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.kop-subtitle {
+  font-size: 12pt;
+  font-weight: bold;
+  margin: 0.25rem 0;
+}
+
+.kop-address {
+  font-size: 0.9rem;
+  margin: 0.25rem 0 0.5rem 0;
+}
+
+.kop-divider {
+  border: 0;
+  border-top: 3px double #000;
+  margin-top: 1rem;
+}
+
+.doc-title {
+  margin-bottom: 2.5rem;
+}
+
+.doc-title h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 0 0 0.25rem 0;
+}
+
+.doc-title h4 {
+  font-size: 1rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+.doc-header-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.doc-row {
+  display: flex;
+  margin-bottom: 0.25rem;
+}
+
+.dl {
+  width: 140px;
+  flex-shrink: 0;
+}
+
+.dv {
+  flex: 1;
+  font-weight: bold;
+}
+
+.doc-checklist-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.doc-box-group {
+  margin-bottom: 1rem;
+}
+
+.doc-box-group h5 {
+  font-size: 1rem;
+  margin: 0 0 0.5rem 0;
+  border-bottom: 1px solid #000;
+  padding-bottom: 0.25rem;
+}
+
+.ro-checkbox-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem 0;
+  font-size: 0.9rem;
+}
+
+.ro-box {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.doc-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.doc-table th,
+.doc-table td {
+  border: 1px solid #000;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.doc-table th {
+  background-color: #f8fafc;
+  font-weight: bold;
+}
+
+.doc-signatures {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+
+.sig-box {
+  width: 250px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.sig-title {
+  margin-bottom: 1rem;
+}
+
+.sig-space {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem 0;
+}
+
+.sig-name {
+  border-top: 1px solid transparent;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  .report-document,
+  .report-document * {
+    visibility: visible;
+  }
+
+  .report-document {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+}
